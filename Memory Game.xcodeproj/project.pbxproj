@@ -16,6 +16,9 @@
 		65D1963B265D34C2008CAAA0 /* CardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D1963A265D34C2008CAAA0 /* CardModel.swift */; };
 		65D1963D265D3640008CAAA0 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D1963C265D3640008CAAA0 /* Card.swift */; };
 		65D19641265D4105008CAAA0 /* CardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D19640265D4105008CAAA0 /* CardCollectionViewCell.swift */; };
+		65D1964326627EA2008CAAA0 /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D1964226627EA2008CAAA0 /* MainController.swift */; };
+		65D1964526629545008CAAA0 /* TopTenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D1964426629545008CAAA0 /* TopTenViewController.swift */; };
+		65D1964F26639F24008CAAA0 /* Record.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65D1964E26639F24008CAAA0 /* Record.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +33,9 @@
 		65D1963A265D34C2008CAAA0 /* CardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardModel.swift; sourceTree = "<group>"; };
 		65D1963C265D3640008CAAA0 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		65D19640265D4105008CAAA0 /* CardCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCollectionViewCell.swift; sourceTree = "<group>"; };
+		65D1964226627EA2008CAAA0 /* MainController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainController.swift; sourceTree = "<group>"; };
+		65D1964426629545008CAAA0 /* TopTenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopTenViewController.swift; sourceTree = "<group>"; };
+		65D1964E26639F24008CAAA0 /* Record.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Record.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,18 +68,37 @@
 		65D19625265D2ACB008CAAA0 /* Memory Game */ = {
 			isa = PBXGroup;
 			children = (
+				65D1962C265D2ACB008CAAA0 /* Main.storyboard */,
+				65D196472662A460008CAAA0 /* logic */,
+				65D196462662A36B008CAAA0 /* controllers */,
 				65D19626265D2ACB008CAAA0 /* AppDelegate.swift */,
 				65D19628265D2ACB008CAAA0 /* SceneDelegate.swift */,
-				65D1962A265D2ACB008CAAA0 /* ViewController.swift */,
-				65D1962C265D2ACB008CAAA0 /* Main.storyboard */,
 				65D1962F265D2ACE008CAAA0 /* Assets.xcassets */,
 				65D19631265D2ACE008CAAA0 /* LaunchScreen.storyboard */,
 				65D19634265D2ACE008CAAA0 /* Info.plist */,
+			);
+			path = "Memory Game";
+			sourceTree = "<group>";
+		};
+		65D196462662A36B008CAAA0 /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				65D1964426629545008CAAA0 /* TopTenViewController.swift */,
+				65D1964226627EA2008CAAA0 /* MainController.swift */,
+				65D1962A265D2ACB008CAAA0 /* ViewController.swift */,
+			);
+			path = controllers;
+			sourceTree = "<group>";
+		};
+		65D196472662A460008CAAA0 /* logic */ = {
+			isa = PBXGroup;
+			children = (
+				65D1964E26639F24008CAAA0 /* Record.swift */,
 				65D1963A265D34C2008CAAA0 /* CardModel.swift */,
 				65D1963C265D3640008CAAA0 /* Card.swift */,
 				65D19640265D4105008CAAA0 /* CardCollectionViewCell.swift */,
 			);
-			path = "Memory Game";
+			path = logic;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -147,10 +172,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				65D1962B265D2ACB008CAAA0 /* ViewController.swift in Sources */,
+				65D1964326627EA2008CAAA0 /* MainController.swift in Sources */,
 				65D1963B265D34C2008CAAA0 /* CardModel.swift in Sources */,
 				65D1963D265D3640008CAAA0 /* Card.swift in Sources */,
+				65D1964F26639F24008CAAA0 /* Record.swift in Sources */,
 				65D19627265D2ACB008CAAA0 /* AppDelegate.swift in Sources */,
 				65D19641265D4105008CAAA0 /* CardCollectionViewCell.swift in Sources */,
+				65D1964526629545008CAAA0 /* TopTenViewController.swift in Sources */,
 				65D19629265D2ACB008CAAA0 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
